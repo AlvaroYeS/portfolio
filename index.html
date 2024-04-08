@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" onmouseover="this.src='images/logo-2.png';"
+                        onmouseout="this.src='images/logo.png';">
+                </a>
+
+                <div class="menu-items" id="menu-items">
+                    <ul>
+                        <li><a href="#">
+                                <h2>Sobre mi</h2>
+                            </a></li>
+                        <li><a href="proyectos.html">
+                                <h2>Proyectos</h2>
+                            </a></li>
+                        <li><a href="contacto.html">
+                                <h2>Contacto</h2>
+                            </a></li>
+                    </ul>
+                </div>
+
+                <button class="boton" id="boton">
+                    <img src="images/hamburger.png" id="boton-icon">
+                </button>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <div class="skills-container">
+                <div class="skill-items aparecer" style="display: block;">
+                    <img src="images/html.png">
+                    <div class="text">HTML</div>
+                </div>
+
+                <div class="skill-items aparecer">
+                    <img src="images/css.png">
+                    <div class="text">CSS</div>
+                </div>
+
+                <div class="skill-items aparecer">
+                    <img src="images/js.png">
+                    <div class="text">JS</div>
+                </div>
+                <div class="skill-items aparecer">
+                    <img src="images/java.png">
+                    <div class="text">JAVA</div>
+                </div>
+                <div class="skill-items aparecer">
+                    <img src="images/office.png">
+                    <div class="text">OFFICE</div>
+                </div>
+                <div class="skill-items aparecer">
+                    <img src="images/pc.png">
+                    <div class="text">Mantenimiento de equipos</div>
+                </div>
+                <div class="skill-items aparecer">
+                    <img src="images/lan.png">
+                    <div class="text">Redes locales</div>
+                </div>
+                <div class="skill-items aparecer">
+                    <img src="images/windowslinux.png">
+                    <div class="text">Sistemas Operativos</div>
+                </div>
+
+                <a class="prev" onclick="skillPlus(-1)">❮</a>
+                <a class="next" onclick="skillPlus(1)">❯</a>
+
+                <div style="text-align:center">
+                    <span class="punto active" onclick="skillActual(1)"></span>
+                    <span class="punto" onclick="skillActual(2)"></span>
+                    <span class="punto" onclick="skillActual(3)"></span>
+                    <span class="punto" onclick="skillActual(4)"></span>
+                    <span class="punto" onclick="skillActual(5)"></span>
+                    <span class="punto" onclick="skillActual(6)"></span>
+                    <span class="punto" onclick="skillActual(7)"></span>
+                    <span class="punto" onclick="skillActual(8)"></span>
+                </div>
+            </div>
+
+            <div class="experiencia-container">
+                <h2>Experiencia laboral</h2>
+
+                <img src="images/flopitec.png">
+
+                Flopitec - 2023
+            </div>
+        </div>
+
+        <div class="educacion-container">
+            <h2>Educacion</h2>
+
+            <div class="educacion-items">
+                <div class="educacion-item" id="universidad">
+                    <img src="images/loading.gif">
+
+                    Universidad
+                </div>
+
+                <div class="educacion-item" id="fp">
+                    <img src="images/anabenitez.jpg">
+
+                    Formacion profesional
+                </div>
+
+                <div class="educacion-item" id="secundaria">
+                    <img src="images/santodomingo.jpg">
+
+                    Secundaria
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/hamburger.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+
+</html>

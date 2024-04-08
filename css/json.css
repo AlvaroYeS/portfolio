@@ -1,0 +1,52 @@
+main {
+    text-align: center;
+}
+
+main img {
+    border: solid 2px black;
+    border-radius: 10px;
+    width: 400px;
+    margin-top: 10px;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+main a {
+    color: blue;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+#proyectos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#proyectos > div {
+    background-color: burlywood;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media (max-width: 800px) {
+    #proyectos {
+        flex-direction: column;
+    }
+
+    #proyectos > div {
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    main img {
+        width: 80%;
+    }
+}
